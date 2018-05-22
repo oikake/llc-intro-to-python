@@ -1,6 +1,6 @@
-#Ladies Learning Code
+# Ladies Learning Code
 
-##Intro to Python
+## Intro to Python
 
 A full day introductory Python workshop.
 
