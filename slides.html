@@ -868,35 +868,31 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Lists
-    
+
         When we have collections of similar things, we might store them in a **list**
-    
+
         ```python
         weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
         ```
-    
+
         ```python
         provinces = ['BC', 'AB', 'SK','MB','ON','QC','NL','NB','NS','PE','YT','NT','NU']
         ```
-    
+
         ```python
         to_do_list = ['Water plants','Clean bathroom','Buy shoes','Solve climate change']
         ```
-    
+
         ```python
         prime_numbers = [2,3,5,7,11,13]
         ```
-        
-        ```
+
+        ```python
         numbers = [5,11,66,22.5]
-        
-        for number in numbers:
-            result = number * 2
-            print("number: '" + number + "' multiplied by 2 equals: " + result)
         ```
-    
+
         In python, the items in the list can be different data types.
-    
+
         ```python
         different_data_types = [3.14,'Canada', 22/7, 1729]
         ```
@@ -906,11 +902,11 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Using Lists
-    
+
         Items in a list can be accessed one at a time.
-    
+
         They are **indexed** (counted) starting at 0.
-    
+
         ```python
         weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
         ```
@@ -939,85 +935,83 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      ## Loops
-  
-      One of the most powerful tools we have as programmers is having a computer repeat the same instruction for us many times.
-      
-      Python can access each item in a list in order, and do something with each item.
-  
-      ```python
-      my_list = ['some','items']
-      for member in my_list:
-          # do something
-          # python will do all of this indented code for each item
-      ```
-  
-      Print all of the items in the list:
-  
-      ```python
-      weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
-      for condition in weather_conditions:
-          print(condition)
-       ```
-  
-      Perform some math on each item in the list:
-      ```python
-      numbers = [5,11,66,22.5]
-      for number in numbers:
-          result = number * 2
-          print(str(number) +' x 2 = ' + str(result))
-          ```
+        ## Loops
+
+        One of the most powerful tools we have as programmers is having a computer repeat the same instruction for us many times.
+
+        Python can access each item in a list in order, and do something with each item.
+
+        ```python
+        my_list = ['some','items']
+        for member in my_list:
+            # do something
+            # python will do all of this indented code for each item
+        ```
+
+        Print all of the items in the list:
+
+        ```python
+        weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
+        for condition in weather_conditions:
+            print(condition)
+         ```
+
+        Perform some math on each item in the list:
+        ```python
+        numbers = [5,11,66,22.5]
+        for number in numbers:
+            result = number * 2
+            print(str(number) +' x 2 = ' + str(result))
+            ```
       </script>
     </section>
 
-<section class="slide" data-markdown>
-  <script type="text/template">
-    ## Counting
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Counting
 
-    As python accesses each item in a list, we can tell it to count how many items it has found.
-
-
-    We can add `1` to the current value of a variable, and assign it back to the same variable. Python processes everything to the right of the `=` before assigning the result.
-
-
-Count the number of items on your to-do list:
+        As python accesses each item in a list, we can tell it to count how many items it has found.
+        
+        We can add `1` to the current value of a variable, and assign it back to the same variable. Python processes everything to the right of the `=` before assigning the result.
+        
+        Count the number of items on your to-do list:
         ```python
-            number_of_todos = 0
-            to_do_list = ['Water plants', 'Clean bathroom','Sweep floors','Buy Coffee','Organise books','Write a novel']
-            
-            for todos in to_do_list:
-                number_of_todos = number_of_todos + 1
+        number_of_todos = 0
+        to_do_list = ['Water plants', 'Clean bathroom','Sweep floors','Buy Coffee','Organise books','Write a novel']
+        
+        for todos in to_do_list:
+            number_of_todos = number_of_todos + 1
 
-            print(number_of_todos)
+        print(number_of_todos)
         ```
-  </script>
-</section>
+      </script>
+    </section>
 
 
-<section class="slide" data-markdown>
-  <script type="text/template">
-    ## EXERCISE 4: SMART LOOPS (20 MINS)
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## EXERCISE 4: SMART LOOPS (20 MINS)
+    
+        Combine what you learned earlier about variables and conditionals (**if** statements) with what you just learned about loops.
+    
+        Open the file `ex4_smart_loops.py`.
+    
+        The file contains a list with a lot of numbers in it.
+    
+        * count how many items are less than 50, and print it to the console
+        * count how many items are both greater than 500 and less than 1000, and print it to the console
+        * BONUS: count how many items are odd numbers, and print it to the console
+        (hint : https://docs.python.org/2/reference/expressions.html#binary-arithmetic-operations)
+    
+      </script>
+    </section>
 
-    Combine what you learned earlier about variables and conditionals (**if** statements) with what you just learned about loops.
-
-    Open the file `ex4_smart_loops.py`.
-
-    The file contains a list with a lot of numbers in it.
-
-    * count how many items are less than 50, and print it to the console
-    * count how many items are both greater than 500 and less than 1000, and print it to the console
-    * BONUS: count how many items are odd numbers, and print it to the console
-    (hint : https://docs.python.org/2/reference/expressions.html#binary-arithmetic-operations)
-
-  </script>
-</section>
-
-<section class="slide title full-monty">
-  <!-- Mandatory Monty Python reference -->
-  <h1 class="heading-bg"><span>And now for something completely different</span></h1>
-
-  <aside>Source: <a href="https://www.flickr.com/photos/nerdcoreblog/13995269592/">flickr.com/photos/nerdcoreblog</a></aside>
-</section>
+    <section class="slide title full-monty">
+      <!-- Mandatory Monty Python reference -->
+      <h1 class="heading-bg"><span>And now for something completely different</span></h1>
+    
+      <aside>Source: <a href="https://www.flickr.com/photos/nerdcoreblog/13995269592/">flickr.com/photos/nerdcoreblog</a></aside>
+    </section>
 
 <!-- -------------------- -->
 <!-- Opening a file -->
@@ -1038,14 +1032,11 @@ Count the number of items on your to-do list:
         When you open a file using the "with" syntax, that creates a new block and the file will be closed automatically for you as soon as you exit the block.
 
         ```python
-         with open('llc-chapters.csv') as chapters:
-             print(chapters.read())
-
+        with open('llc-chapters.csv') as chapters:
+            print(chapters.read())
         ```
 
         ![read csv](framework/img/workshop/read-csv-file.png) <!-- .element: width="45%" -->
-
-
       </script>
     </section>
 
@@ -1099,21 +1090,12 @@ Count the number of items on your to-do list:
 
         ```python
         with open('llc-chapters.csv') as chapters:
-             for line in chapters:
-               print(line)
-
+            for line in chapters:
+                print(line)
         ```
-
-
-
       </script>
     </section>
-
-
-
-
-
-
+    
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Libraries
@@ -1136,7 +1118,6 @@ Count the number of items on your to-do list:
         So far, we've been writing all our code in the console or in one file. When you use a library, you don't want to copy all that code into your file, otherwise it would become huge!
 
         Instead, **import** the functions and other structures from a **module** to use the code without actually adding all of the code into your file.
-
 
         ```python
          import csv
@@ -1162,16 +1143,16 @@ Count the number of items on your to-do list:
         1. pass the file into `DictReader`
 
         ```
-         import csv
-         with open('llc-chapters.csv') as chapters_file:
-             chapters_data = csv.DictReader(chapters_file)
+        import csv
+        with open('llc-chapters.csv') as chapters_file:
+            chapters_data = csv.DictReader(chapters_file)
         ```
 
         Now, we can pull out one row at a time.
 
-        ```
-             chapter = next(chapters_data)
-             print(chapter)
+        ```python
+        chapter = next(chapters_data)
+        print(chapter)
         ```
 
         What is this?
@@ -1188,28 +1169,26 @@ Count the number of items on your to-do list:
         Python used `DictReader` to read a row in the file and transform it into a **dictionary**, a bunch of *key: value pairs*.
 
         This is just like a regular dictionary:
-         > **[python](http://www.dictionary.com/browse/python)** : any of several Old World boa constrictors of the subfamily Pythoninae, often growing to a length of more than 20 feet
+        > **[python](http://www.dictionary.com/browse/python)** : any of several Old World boa constrictors of the subfamily Pythoninae, often growing to a length of more than 20 feet
 
-         The console printed out `chapter` like this:
-          ```python
+        The console printed out `chapter` like this:
+        ```python
         {'City': 'Vancouver', 'Chapter Lead(s)': 'Meghan', 'Province': 'BC'}
-           ```
+        ```
 
         But think of it like this:
         > **City**: 'Vancouver'
 
         > **Chapter Lead(s)**: 'Meghan'
 
-        >  **Province**: 'BC'
-
-
+        > **Province**: 'BC'
+        
         Python can 'look up' each value in a row just as you would the meaning of the word *python*.
 
         ```python
-         print(chapter['City'])
-         print(chapter['Province'])
-         print(chapter['Chapter Lead(s)'])
-
+        print(chapter['City'])
+        print(chapter['Province'])
+        print(chapter['Chapter Lead(s)'])
         ```
       </script>
     </section>
@@ -1225,13 +1204,12 @@ Count the number of items on your to-do list:
         * all the instructions in the indented block are run for each `chapter`
 
         ```python
-         import csv
-         with open('llc-chapters.csv') as chapters_file:
-             chapters = csv.DictReader(chapters_file)
-             for chapter in chapters:
-                       print(chapter['City'] + ', ' + chapter['Province'])
-                       print(chapter['Chapter Lead(s)'])
-
+        import csv
+        with open('llc-chapters.csv') as chapters_file:
+            chapters = csv.DictReader(chapters_file)
+            for chapter in chapters:
+                print(chapter['City'] + ', ' + chapter['Province'])
+                print(chapter['Chapter Lead(s)'])
         ```
       </script>
     </section>
