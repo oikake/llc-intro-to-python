@@ -731,7 +731,7 @@
         if weather == "cold":
             print("Wear a sweater!")
         else:
-        print("Dress normally :)")
+            print("Dress normally :)")
         ```
 
           If you have made a mistake, the error will look like:
@@ -766,14 +766,11 @@
          x = 5
          print(x > 5)
          print(x >= 5)
-
-
+        
          if x >= 5:
              print("x is greater than or equal to 5")
          else:
              print("x is less than 5")
-
-
         ```
       </script>
     </section>
@@ -793,11 +790,9 @@
 
         if weather == "cold" and snowing == True:
              print("wear a winter jacket")
-
-
+        
         if weather == "raining" or snowing == True:
              print("bring a change of socks")
-
         ```
       </script>
     </section>
@@ -813,21 +808,17 @@
          x = 5
          if x > 0 and x < 6:
              print("x is between 0 and 6.")
-
         ```
-
-
+        
         ```python
          if x > 10 and x < 0:
              print("x could never be greater than 10 AND less than 0")
-
         ```
 
         Check the type of a variable:
         ```python
          if type(x) == float or type(x) == int:
              print("x is a numeric value")
-
         ```
 
         Bonus: Change the value stored in `x` to a string and try that last one again.
@@ -846,18 +837,17 @@
         * follow the instructions in the comments
         * feel free to choose your own temperatures and messages :)
 
-        ```
+        ```python
         # if the weather is greater than or equal to 25 degrees
         if [replace this with the right condition]:
             print("Go to the beach!")
+        
         # the weather is less than 25 degrees AND greater than 15 degrees
         elif [replace this with the right conditions]:
             # Print "Still warm enough for ice cream!"
         else:
             # Print "Wear a sweater and dream of beaches."
         ```
-
-
       </script>
     </section>
 
@@ -875,116 +865,119 @@
 <!-- Intro to lists -->
 <!-- -------------------- -->
 
-<section class="slide" data-markdown>
-  <script type="text/template">
-    ## Lists
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Lists
+    
+        When we have collections of similar things, we might store them in a **list**
+    
+        ```python
+        weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
+        ```
+    
+        ```python
+        provinces = ['BC', 'AB', 'SK','MB','ON','QC','NL','NB','NS','PE','YT','NT','NU']
+        ```
+    
+        ```python
+        to_do_list = ['Water plants','Clean bathroom','Buy shoes','Solve climate change']
+        ```
+    
+        ```python
+        prime_numbers = [2,3,5,7,11,13]
+        ```
+        
+        ```
+        numbers = [5,11,66,22.5]
+        
+        for number in numbers:
+            result = number * 2
+            print("number: '" + number + "' multiplied by 2 equals: " + result)
+        ```
+    
+        In python, the items in the list can be different data types.
+    
+        ```python
+        different_data_types = [3.14,'Canada', 22/7, 1729]
+        ```
+      </script>
+    </section>
 
-    When we have collections of similar things, we might store them in a **list**
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Using Lists
+    
+        Items in a list can be accessed one at a time.
+    
+        They are **indexed** (counted) starting at 0.
+    
+        ```python
+        weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
+        ```
 
-    ```python
-    weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
-    ```
+        Try these in the python console:
+        ```python
+        weather_conditions[0]
+        weather_conditions[3]
+        weather_conditions[10]
+        ```
 
-    ```python
-    provinces = ['BC', 'AB', 'SK','MB','ON','QC','NL','NB','NS','PE','YT','NT','NU']
-    ```
+        What Happened?
+        ```python
+        Traceback (most recent call last):
+        File "<input>", line 1, in <module>
+            IndexError: list index out of range 
+        ```
 
-    ```python
-    to_do_list = ['Water plants','Clean bathroom','Buy shoes','Solve climate change']
-    ```
-
-    ```python
-    prime_numbers = [2,3,5,7,11,13]
-    ```
-
-    In python, the items in the list can be different data types.
-
-    ```python
-    different_data_types = [3.14,'Canada', 22/7, 1729]
-    ```
-  </script>
-</section>
-
-<section class="slide" data-markdown>
-  <script type="text/template">
-    ## Using Lists
-
-    Items in a list can be accessed one at a time.
-
-    They are **indexed** (counted) starting at 0.
-
-    ```python
-    weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
-    ```
-
-    Try these in the python console:
-    ```python
-    weather_conditions[0]
-    weather_conditions[3]
-    weather_conditions[10]
-    ```
-
-    What Happened?
-    ```python
-    Traceback (most recent call last):
-    File "<input>", line 1, in <module>
-      IndexError: list index out of range 
-    ```
-
-    Python cannot find `weather_conditions[10]` because it does not exist.
-  </script>
-</section>
+        Python cannot find `weather_conditions[10]` because it does not exist.
+      </script>
+    </section>
 
 <!-- -------------------- -->
 <!-- Intro to loops -->
 <!-- -------------------- -->
 
-<section class="slide" data-markdown>
-  <script type="text/template">
-    ## Loops
-
-    One of the most powerful tools we have as programmers is having a computer repeat the same instruction for us many times.
-    
-    Python can access each item in a list in order, and do something with each item.
-
-    ```python
-    my_list = ['some','items']
-    for member in my_list:
-        # do something
-        # python will do all of this indented code for each item
-
-    ```
-
-    Print all of the items in the list:
-
-    ```python
-    weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
-
-    for condition in weather_conditions:
-        print(condition)
-     ```
-
-    Perform some math on each item in the list:
-    ```python
-numbers = [5,11,66,22.5]
-
-for number in numbers:
-    result = number * 2
-    print(str(number) +' x 2 = ' + str(result))
-
-    ```
-
-</script>
-</section>
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      ## Loops
+  
+      One of the most powerful tools we have as programmers is having a computer repeat the same instruction for us many times.
+      
+      Python can access each item in a list in order, and do something with each item.
+  
+      ```python
+      my_list = ['some','items']
+      for member in my_list:
+          # do something
+          # python will do all of this indented code for each item
+      ```
+  
+      Print all of the items in the list:
+  
+      ```python
+      weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
+      for condition in weather_conditions:
+          print(condition)
+       ```
+  
+      Perform some math on each item in the list:
+      ```python
+      numbers = [5,11,66,22.5]
+      for number in numbers:
+          result = number * 2
+          print(str(number) +' x 2 = ' + str(result))
+          ```
+      </script>
+    </section>
 
 <section class="slide" data-markdown>
   <script type="text/template">
     ## Counting
 
-As python accesses each item in a list, we can tell it to count how many items it has found.
+    As python accesses each item in a list, we can tell it to count how many items it has found.
 
 
-We can add `1` to the current value of a variable, and assign it back to the same variable. Python processes everything to the right of the `=` before assigning the result.
+    We can add `1` to the current value of a variable, and assign it back to the same variable. Python processes everything to the right of the `=` before assigning the result.
 
 
 Count the number of items on your to-do list:
