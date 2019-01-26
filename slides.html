@@ -883,30 +883,25 @@
 
     ```python
     weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
-
     ```
 
     ```python
     provinces = ['BC', 'AB', 'SK','MB','ON','QC','NL','NB','NS','PE','YT','NT','NU']
+    ```
 
-   ```
-   ```python
-to_do_list = ['Water plants','Clean bathroom','Buy shoes','Solve climate change']
+    ```python
+    to_do_list = ['Water plants','Clean bathroom','Buy shoes','Solve climate change']
+    ```
 
-     ```
-
-   ```python
-prime_numbers = [2,3,5,7,11,13]
-
-  ```
+    ```python
+    prime_numbers = [2,3,5,7,11,13]
+    ```
 
     In python, the items in the list can be different data types.
 
     ```python
     different_data_types = [3.14,'Canada', 22/7, 1729]
-
-      ```
-
+    ```
   </script>
 </section>
 
@@ -919,26 +914,24 @@ prime_numbers = [2,3,5,7,11,13]
     They are **indexed** (counted) starting at 0.
 
     ```python
-     weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
-
+    weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
     ```
+
     Try these in the python console:
     ```python
     weather_conditions[0]
     weather_conditions[3]
     weather_conditions[10]
-   ```
+    ```
 
-   What Happened?
-
+    What Happened?
     ```python
     Traceback (most recent call last):
-       File "<input>", line 1, in <module>
-    IndexError: list index out of range
-      ```
-Python cannot find `weather_conditions[10]` because it does not exist.
+    File "<input>", line 1, in <module>
+      IndexError: list index out of range 
+    ```
 
-
+    Python cannot find `weather_conditions[10]` because it does not exist.
   </script>
 </section>
 
@@ -950,35 +943,36 @@ Python cannot find `weather_conditions[10]` because it does not exist.
   <script type="text/template">
     ## Loops
 
-      One of the most powerful tools we have as programmers is having a computer repeat the same instruction for us many times.
+    One of the most powerful tools we have as programmers is having a computer repeat the same instruction for us many times.
+    
+    Python can access each item in a list in order, and do something with each item.
 
-      Python can access each item in a list in order, and do something with each item.
+    ```python
+    my_list = ['some','items']
+    for member in my_list:
+        # do something
+        # python will do all of this indented code for each item
 
-```python
-my_list = ['some','items']
-for member in my_list:
-   # do something
-   # python will do all of this indented code for each item
+    ```
 
-```
-Print all of the items in the list:
-      ```python
-weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
+    Print all of the items in the list:
 
-for condition in weather_conditions:
-  print(condition)
+    ```python
+    weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
 
+    for condition in weather_conditions:
+        print(condition)
      ```
 
-Perform some math on each item in the list:
-     ```python
-    numbers = [5,11,66,22.5]
+    Perform some math on each item in the list:
+    ```python
+numbers = [5,11,66,22.5]
 
-    for number in numbers:
-       result = number * 2
-       print(str(number) +' x 2 = ' + str(result))
+for number in numbers:
+    result = number * 2
+    print(str(number) +' x 2 = ' + str(result))
 
-```
+    ```
 
 </script>
 </section>
@@ -994,19 +988,15 @@ We can add `1` to the current value of a variable, and assign it back to the sam
 
 
 Count the number of items on your to-do list:
-      ```python
-number_of_todos = 0
-to_do_list = ['Water plants', 'Clean bathroom','Sweep floors','Buy Coffee','Organise books','Write a novel']
+        ```python
+            number_of_todos = 0
+            to_do_list = ['Water plants', 'Clean bathroom','Sweep floors','Buy Coffee','Organise books','Write a novel']
+            
+            for todos in to_do_list:
+                number_of_todos = number_of_todos + 1
 
-for todos in to_do_list:
-  number_of_todos = number_of_todos + 1
-
-print(number_of_todos)
-     ```
-
-
-
-
+            print(number_of_todos)
+        ```
   </script>
 </section>
 
