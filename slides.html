@@ -63,6 +63,7 @@
     </div>
   </header>
 
+
   <main>
     <!-- Instructor info -->
     <section class="slide intro">
@@ -97,6 +98,7 @@
         You want it to be an *even bigger success* than last year, so not only do you need to know how many people attended (so you can beat that target), but you also want to pull other interesting stats to put in a press release.
 
         Today, you&rsquo;ll learn to 'think' like a computer as you gather insights into who attended Ladies Learning Code workshops in 2015.
+
       </script>
     </section>
 
@@ -118,8 +120,10 @@
       * Dictionaries
       * Finding &amp; counting patterns
       * Final Project
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -142,6 +146,7 @@
       </script>
     </section>
 
+
     <section class="slide who-uses" data-markdown>
       <script type="text/template">
         ## Who uses Python?
@@ -162,6 +167,7 @@
 
       </script>
     </section>
+
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
@@ -185,7 +191,9 @@
       1. **[PyCharm Educational Edition](https://www.jetbrains.com/pycharm-educational/)**
       1. [Learner files from LLC (containing the exercise and reference files)](https://github.com/ladieslearningcode/llc-intro-to-python/archive/master.zip).
         * make sure the **llc-intro-to-python-master.zip** file has been unzipped (and extracted for PC users) so you can access the contents of the folder
+
     </section>
+
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
@@ -194,8 +202,10 @@
         Use IDEs to write code faster with fewer mistakes.
         <br><br>
         ![That is awesome!](framework/img/workshop/use_the_force.gif) <!-- .element: style="width: 60%" -->
+
       </script>
     </section>
+
 
     <section class="slide side-by-side" data-markdown>
       <script type="text/template">
@@ -214,6 +224,7 @@
         The other folders & files are needed to make this slide presentation work, so avoid making edits to them!
 
         ![](framework/img/workshop/pycharm-project3.png)
+
       </script>
     </section>
 
@@ -231,6 +242,7 @@
         ![Python Console in PyCharm](./framework/img/workshop/open-console2.png)
 
         **Pro tip!** You can also open and close the console by selecting the icon in the lower left of PyCharm.
+
       </script>
     </section>
 
@@ -246,17 +258,17 @@
 
         The command you input after the `>>>` gets *evaluated* and a value is returned back to you.
 
-        ```
+        ```python
         >>> 2 + 2
         4
         ```
 
-        ```
+        ```python
         >>> 2 * 15
         30
         ```
 
-        ```
+        ```python
         >>> 1 / 2
         0
         ```
@@ -264,6 +276,7 @@
 
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -279,7 +292,7 @@
 
         To display the type, use `type()` and a data value inside the parentheses.
 
-        ```
+        ```python
         >>> type("hello")
         <type 'str'>
 
@@ -289,8 +302,10 @@
         >>> type(3.14159)
         <type 'float'>
         ```
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -313,8 +328,10 @@
         ```
 
         It is possible to create your own but today's exercises will use functions provided by Python and its libraries.
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -324,23 +341,26 @@
 
         Note the syntax in the examples. Quotes should be included when using a *string* data type.
 
-        ```
+        ```python
         >>> print("Hello World!")
         Hello World!
         ```
 
-        ```
+        ```python
         >>> print(2 + 2)
         4
         ```
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Concatenation
         **Concatenation** is used to "add" strings together by joining multiple strings into one.
-        ```
+
+        ```python
         >>> print("Hello " + "World!")
         Hello World!
         ```
@@ -354,8 +374,10 @@
         File "<input>", line 1, in <module>
         TypeError: unsupported operand type(s) for +: 'int' and 'str'
         ```
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -392,7 +414,7 @@
 
         In this example, the `int()` function can be used to convert the `"2"` string into a number.
 
-        ```
+        ```python
         >>> print(2 + int("2"))
         4
         ```
@@ -401,7 +423,8 @@
         Remember the `1/2 = 0` example? When Python divides two integers, it rounds the result down to the nearest integer (in this case 0).
 
         Integer **types** are whole numbers (no decimals), so to be more precise, `float()` can be used to include decimals.
-        ```
+
+        ```python
         >>> print(float(1) / float(2))
         0.5
         ```
@@ -409,25 +432,25 @@
       </script>
     </section>
 
+
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Typecasting (Continued)
 
         Python can also be used to convert numbers to strings. This example below will return an error.  Why?
 
-        ```
+        ```python
         >>> print(99 + " bottles of beer on the wall")
         Traceback (most recent call last):
-          File "<input>", line 1, in <module>
+            File "<input>", line 1, in <module>
         TypeError: unsupported operand type(s) for +: 'int' and 'str'
         ```
 
         <br>
         Use the `str()` function to convert a number to a string.
 
-        ```
+        ```python
         >>> print(str(99) + " bottles of beer on the wall")
-
         ```
 
         <br>
@@ -461,6 +484,7 @@
         Today is Saturday
         ```
         You can store almost anything in a variable.
+
       </script>
     </section>
 
@@ -482,8 +506,10 @@
 
         You changed <!-- .element: class="delayed" -->`y`, but the old value of `x` is still in memory.
         Python will remember variable names until you close PyCharm or [clear them manually](https://docs.python.org/2/tutorial/datastructures.html#the-del-statement).
+
       </script>
     </section>
+
 
     <section class="slide list-font-default" data-markdown>
       <script type="text/template">
@@ -499,8 +525,10 @@
           * `1day` gives you an error, `day1` will work.
         * use descriptive names
           * e.g. `first_name` is more descriptive than `fn`
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -514,9 +542,10 @@
 
         Note the syntax below:
 
-        ```
+        ```python
         # Python will ignore anything after the # symbol
         ```
+
       </script>
     </section>
 
@@ -551,9 +580,9 @@
 
         ![](framework/img/workshop/raw_input.gif)
 
-
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -592,8 +621,10 @@
           # ... then continues to this line
           print("Hello " + name)
           ```
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -613,6 +644,7 @@
 
         <br>
         You can run your program as many times as you like by repeating the steps above.
+
       </script>
     </section>
 
@@ -646,8 +678,10 @@
         else:
             dress normally :)
         ```
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -668,6 +702,7 @@
         >>> weather == "raining"
         True
         ```
+
       </script>
     </section>
 
@@ -712,6 +747,7 @@
       </script>
     </section>
 
+
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Indentation
@@ -741,6 +777,7 @@
                 ^
         IndentationError: expected an indented block
         ```
+
       </script>
     </section>
 
@@ -766,14 +803,16 @@
          x = 5
          print(x > 5)
          print(x >= 5)
-        
+
          if x >= 5:
              print("x is greater than or equal to 5")
          else:
              print("x is less than 5")
         ```
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -794,8 +833,10 @@
         if weather == "raining" or snowing == True:
              print("bring a change of socks")
         ```
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -809,7 +850,7 @@
          if x > 0 and x < 6:
              print("x is between 0 and 6.")
         ```
-        
+
         ```python
          if x > 10 and x < 0:
              print("x could never be greater than 10 AND less than 0")
@@ -823,8 +864,10 @@
 
         Bonus: Change the value stored in `x` to a string and try that last one again.
         How can you change the test to print out something if x is a string?
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -848,12 +891,15 @@
         else:
             # Print "Wear a sweater and dream of beaches."
         ```
+
       </script>
     </section>
+
 
     <section class="slide title" data-markdown>
       <script type="text/template">
         # Lunch!
+
       </script>
     </section>
 
@@ -896,6 +942,7 @@
         ```python
         different_data_types = [3.14,'Canada', 22/7, 1729]
         ```
+
       </script>
     </section>
 
@@ -926,6 +973,7 @@
         ```
 
         Python cannot find `weather_conditions[10]` because it does not exist.
+
       </script>
     </section>
 
@@ -963,6 +1011,7 @@
             result = number * 2
             print(str(number) +' x 2 = ' + str(result))
             ```
+
       </script>
     </section>
 
@@ -971,9 +1020,9 @@
         ## Counting
 
         As python accesses each item in a list, we can tell it to count how many items it has found.
-        
+
         We can add `1` to the current value of a variable, and assign it back to the same variable. Python processes everything to the right of the `=` before assigning the result.
-        
+
         Count the number of items on your to-do list:
         ```python
         number_of_todos = 0
@@ -984,6 +1033,7 @@
 
         print(number_of_todos)
         ```
+
       </script>
     </section>
 
@@ -1002,9 +1052,10 @@
         * count how many items are both greater than 500 and less than 1000, and print it to the console
         * BONUS: count how many items are odd numbers, and print it to the console
         (hint : https://docs.python.org/2/reference/expressions.html#binary-arithmetic-operations)
-    
+
       </script>
     </section>
+
 
     <section class="slide title full-monty">
       <!-- Mandatory Monty Python reference -->
@@ -1016,7 +1067,6 @@
 <!-- -------------------- -->
 <!-- Opening a file -->
 <!-- -------------------- -->
-
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -1037,8 +1087,10 @@
         ```
 
         ![read csv](framework/img/workshop/read-csv-file.png) <!-- .element: width="45%" -->
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -1055,8 +1107,10 @@
              print(chapters.readline())
              print(chapters.readline())
         ```
+
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -1074,249 +1128,288 @@
         * the first line shows the headings that describe the data in the next lines
         * the second and third line each represent one of the LLC chapter cities & the name of the chapter lead
 
-        That's because it's pulling the data from the rows & columns of the CSV file.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Loops: Reading all the lines in a file
-
-        We've just seen how to print out one line of a time but what if you need to read all the lines in the file?
-
-        Try using the `for` loop to print each row in the file.
-
-        Here's some sample code:
-
-        ```python
-        with open('llc-chapters.csv') as chapters:
-            for line in chapters:
-                print(line)
-        ```
-      </script>
-    </section>
+        That's because
+            ## Loops: Reading all the lines in a file
     
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Libraries
+            We've just seen how to print out one line of a time but what if you need to read all the lines in the file?
+    
+            Try using the `for` loop to print each row in the file.
+    
+            Here's some sample code:
+    
+            ```python
+            with open('llc-chapters.csv') as chapters:
+                for line in chapters:
+                    print(line)
+            ```
+      
+         it's pulling the data from the rows & columns of the CSV file.
 
-        Python has many useful built in **libraries** &mdash; collections of pre-written code.
-
-        Today we&rsquo;ll use the **csv** library to help us make more sense of the data contained in a CSV file and learn more about the LLC activities in 2015.
-        This library will help us read the data in the file and transform it into a form that is easier to work with.
-
-        More info: https://docs.python.org/2/library/csv.html
-
-        ![](framework/img/workshop/genius-glee.gif)
       </script>
     </section>
 
+
     <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Using a library
+        <script type="text/template">
+            ## Loops: Reading all the lines in a file
 
-        So far, we've been writing all our code in the console or in one file. When you use a library, you don't want to copy all that code into your file, otherwise it would become huge!
+            We've just seen how to print out one line of a time but what if you need to read all the lines in the file?
 
-        Instead, **import** the functions and other structures from a **module** to use the code without actually adding all of the code into your file.
+            Try using the `for` loop to print each row in the file.
 
-        ```python
-         import csv
-        ```
+            Here's some sample code:
 
-        More info: https://docs.python.org/2/tutorial/modules.html
-      </script>
+            ```python
+            with open('llc-chapters.csv') as chapters:
+                for line in chapters:
+                    print(line)
+            ```
+
+        </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+            ## Libraries
+
+            Python has many useful built in **libraries** &mdash; collections of pre-written code.
+
+            Today we&rsquo;ll use the **csv** library to help us make more sense of the data contained in a CSV file and learn more about the LLC activities in 2015.
+            This library will help us read the data in the file and transform it into a form that is easier to work with.
+
+            More info: https://docs.python.org/2/library/csv.html
+
+            ![](framework/img/workshop/genius-glee.gif)
+
+        </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+            ## Using a library
+
+            So far, we've been writing all our code in the console or in one file. When you use a library, you don't want to copy all that code into your file, otherwise it would become huge!
+
+            Instead, **import** the functions and other structures from a **module** to use the code without actually adding all of the code into your file.
+
+            ```python
+            import csv
+            ```
+
+            More info: https://docs.python.org/2/tutorial/modules.html
+
+         </script>
     </section>
 
 <!-- -------------------- -->
 <!-- Reading a CSV -->
 <!-- -------------------- -->
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Reading data from a CSV file
-
-        The CSV library has a number of different tools for extracting data from a CSV file. Instead of a line of comma-separated values like in the previous example, we can access individual values (like the cells of a spreadsheet).
-
-        Today we&rsquo;ll mostly use the `DictReader` tool to access the values.
-
-        1. import the `csv` library
-        1. open the file
-        1. pass the file into `DictReader`
-
-        ```
-        import csv
-        with open('llc-chapters.csv') as chapters_file:
-            chapters_data = csv.DictReader(chapters_file)
-        ```
-
-        Now, we can pull out one row at a time.
-
-        ```python
-        chapter = next(chapters_data)
-        print(chapter)
-        ```
-
-        What is this?
-        ```python
-        {'City': 'Vancouver', 'Chapter Lead(s)': 'Meghan', 'Province': 'BC'}
-           ```
-      </script>
-    </section>
 
     <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Dictionaries
+        <script type="text/template">
+            ## Reading data from a CSV file
 
-        Python used `DictReader` to read a row in the file and transform it into a **dictionary**, a bunch of *key: value pairs*.
+            The CSV library has a number of different tools for extracting data from a CSV file. Instead of a line of comma-separated values like in the previous example, we can access individual values (like the cells of a spreadsheet).
 
-        This is just like a regular dictionary:
-        > **[python](http://www.dictionary.com/browse/python)** : any of several Old World boa constrictors of the subfamily Pythoninae, often growing to a length of more than 20 feet
+            Today we&rsquo;ll mostly use the `DictReader` tool to access the values.
 
-        The console printed out `chapter` like this:
-        ```python
-        {'City': 'Vancouver', 'Chapter Lead(s)': 'Meghan', 'Province': 'BC'}
-        ```
+            1. import the `csv` library
+            1. open the file
+            1. pass the file into `DictReader`
 
-        But think of it like this:
-        > **City**: 'Vancouver'
+            ```
+            import csv
 
-        > **Chapter Lead(s)**: 'Meghan'
+            # Open 'llc-chapters.csv' file
+            with open('llc-chapters.csv') as chapters_file:
+                
+                # Convert it to a csv_data structure
+                chapters_data = csv.DictReader(chapters_file)
 
-        > **Province**: 'BC'
-        
-        Python can 'look up' each value in a row just as you would the meaning of the word *python*.
+                # Now, we can pull out one row at a time.
+                chapter = next(chapters_data)
+                print(chapter)
+            ```
 
-        ```python
-        print(chapter['City'])
-        print(chapter['Province'])
-        print(chapter['Chapter Lead(s)'])
-        ```
-      </script>
-    </section>
+            What is this?
+            ```python
+            {'City': 'Vancouver', 'Chapter Lead(s)': 'Meghan', 'Province': 'BC'}
+            ```
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Example: Working in a `for` loop
-
-        Earlier, we learned how `for` loops can repeat the same set of instructions.
-
-        * the `for` loop assigns *each row* to the `chapter` variable
-        * group instructions together with the same indentation
-        * all the instructions in the indented block are run for each `chapter`
-
-        ```python
-        import csv
-        with open('llc-chapters.csv') as chapters_file:
-            chapters = csv.DictReader(chapters_file)
-            for chapter in chapters:
-                print(chapter['City'] + ', ' + chapter['Province'])
-                print(chapter['Chapter Lead(s)'])
-        ```
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Exercise 5 : Find your chapter lead (15 mins)
-
-        You already have the tools you need to find your chapter lead(s) in `llc-chapters.csv`.
-
-        In the **exercises** folder, open `ex5_chapter_lead_finder.py` and follow the instructions listed in the comments. Try applying the concepts covered so far.
-
-        ```python
-        # Import the csv library
-        import csv
-
-        # Open the 'llc-chapters.csv' file
-
-        # Convert it to a csv_data structure
-
-        # Loop through each of the rows
-
-            # Compare the 'City' in the row with your city
-
-                # Print a thank you message to your chapter lead(s)
-        ```
-      </script>
+        </script>
     </section>
 
 
     <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Counting loops
+        <script type="text/template">
+            ## Dictionaries
 
+            Python used `DictReader` to read a row in the file and transform it into a **dictionary**, a bunch of *key: value pairs*.
 
+            This is just like a regular dictionary:
+            > **[python](http://www.dictionary.com/browse/python)** : any of several Old World boa constrictors of the subfamily Pythoninae, often growing to a length of more than 20 feet
 
-        Count the number of chapters in **llc-chapters.csv** by adding one each time it loops.
+            The console printed out `chapter` like this:
+            ```python
+            {'City': 'Vancouver', 'Chapter Lead(s)': 'Meghan', 'Province': 'BC'}
+            ```
 
-        ```python
-        # file: exercises/demo_loop_count.py
-        import csv
+            But think of it like this:
+            > **City**: 'Vancouver'
 
-        with open('llc-chapters.csv') as csv_file:
-            csv_data = csv.DictReader(csv_file)
+            > **Chapter Lead(s)**: 'Meghan'
 
-            count = 0
-            for row in csv_data:
-               count = count + 1
+            > **Province**: 'BC'
+            
+            Python can 'look up' each value in a row just as you would the meaning of the word *python*.
 
-            print("There are " + str(count) + " chapters")
-        ```
-      </script>
+            ```python
+            print(chapter['City'])
+            print(chapter['Province'])
+            print(chapter['Chapter Lead(s)'])
+            ```
+
+        </script>
     </section>
 
+
     <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Finding a word in a string
+        <script type="text/template">
+            ## Example: Working in a `for` loop
 
-        So far, we've compared entire strings to each other `"Python" == "Python"`. But what if you want to find a word inside an existing string?
+            Earlier, we learned how `for` loops can repeat the same set of instructions.
 
-        The `.find()` function can be used with `str` types to tell you where the specific string appears according to its **index**.  The index is the numbered position in which it appears.  **Important**: the index starts at 0.
+            * the `for` loop assigns *each row* to the `chapter` variable
+            * group instructions together with the same indentation
+            * all the instructions in the indented block are run for each `chapter`
 
-        In the first example below, "Code" has an index of 16 instead of 17.  Why? <span class="delayed">index starts at 0</span>
+            ```python
+            import csv
 
-        ```python
-        >>> "Ladies Learning Code".find("Code")
-        16
-        >>> title = "National Learn to Code Day"
-        >>> title.find("Code")
-        18
-        >>> title.find("code")
-        -1
-        ```
+            # Open 'llc-chapters.csv' file
+            with open('llc-chapters.csv') as chapters_file:
 
-        The `.find()` function is case-sensitive – it will only match the *exact* string you pass to  it.
-        *<!-- .element: class="footnote" --> When we said computers require **exact** instructions, we meant it!*
-      </script>
+                # Convert it to a csv_data structure
+                chapters = csv.DictReader(chapters_file)
+
+                # loop through each row of the "chapters" Dictonary
+                for chapter in chapters:
+                    print(chapter['City'] + ', ' + chapter['Province'])
+                    print(chapter['Chapter Lead(s)'])
+            ```
+
+        </script>
     </section>
 
+
     <section class="slide" data-markdown>
-      <script type="text/template">
-        ## Exercise 6: Find chapters with co-leads (15 mins)
+        <script type="text/template">
+            ## Exercise 5 : Find your chapter lead (15 mins)
 
-        In the **llc-chapters.csv** file, the `&` character is used to separate the co-lead names.
+            You already have the tools you need to find your chapter lead(s) in `llc-chapters.csv`.
 
-        You can use `.find()` to look for a string within a string, to figure out which cities have co-leads.
+            In the **exercises** folder, open `ex5_chapter_lead_finder.py` and follow the instructions listed in the comments. Try applying the concepts covered so far.
 
-        Remember, `.find()` returns the index of the search string in the other string **or** `-1` to signal nothing was found. Try using the `>=` operator to determine if the string was found.
+            ```python
+            # Import the csv library
+            import csv
 
-        ```python
-         leads = "Erika & Cassie"
-         if leads.find("&") >= 0:
-             print(leads + " are co-leads")
+            # Open the 'llc-chapters.csv' file
 
-        ```
+            # Convert it to a csv_data structure
 
-        Create a new file in the **exercises** folder called `ex6_coleaders.py`, and use what you've learned so far to find which chapter cities have co-leads.
+            # Loop through each of the rows
 
-        * Print a list of cities with co-leads
-        * Count how many chapters have co-leads
-      </script>
+                # Compare the 'City' in the row with your city
+
+                    # Print a thank you message to your chapter lead(s)
+          ```
+
+        </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+            ## Counting loops
+
+            Count the number of chapters in **llc-chapters.csv** by adding one each time it loops.
+
+            ```python
+            # file: exercises/demo_loop_count.py
+            import csv
+
+            with open('llc-chapters.csv') as csv_file:
+                csv_data = csv.DictReader(csv_file)
+
+                count = 0
+                for row in csv_data:
+                   count = count + 1
+
+                print("There are " + str(count) + " chapters")
+          ```
+
+        </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+            ## Finding a word in a string
+
+            So far, we've compared entire strings to each other `"Python" == "Python"`. But what if you want to find a word inside an existing string?
+
+            The `.find()` function can be used with `str` types to tell you where the specific string appears according to its **index**.  The index is the numbered position in which it appears.  **Important**: the index starts at 0.
+
+            In the first example below, "Code" has an index of 16 instead of 17.  Why? <span class="delayed">index starts at 0</span>
+
+            ```python
+            >>> "Ladies Learning Code".find("Code")
+            16
+            >>> title = "National Learn to Code Day"
+            >>> title.find("Code")
+            18
+            >>> title.find("code")
+            -1
+            ```
+
+            The `.find()` function is case-sensitive – it will only match the *exact* string you pass to  it.
+            *<!-- .element: class="footnote" --> When we said computers require **exact** instructions, we meant it!*
+
+        </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+            ## Exercise 6: Find chapters with co-leads (15 mins)
+
+            In the **llc-chapters.csv** file, the `&` character is used to separate the co-lead names.
+
+            You can use `.find()` to look for a string within a string, to figure out which cities have co-leads.
+
+            Remember, `.find()` returns the index of the search string in the other string **or** `-1` to signal nothing was found. Try using the `>=` operator to determine if the string was found.
+
+            ```python
+            leads = "Erika & Cassie"
+            if leads.find("&") >= 0:
+                print(leads + " are co-leads")
+            ```
+
+            Create a new file in the **exercises** folder called `ex6_coleaders.py`, and use what you've learned so far to find which chapter cities have co-leads.
+
+            * Print a list of cities with co-leads
+            * Count how many chapters have co-leads
+
+        </script>
     </section>
 
     <section class="slide title" data-markdown>
-      <script type="text/template">
-        # So what? I can count all this stuff myself!
-      </script>
+        <script type="text/template">
+             # So what? I can count all this stuff myself!
+        </script>
     </section>
 
     <section class="slide" data-markdown>
@@ -1331,12 +1424,13 @@
 
         Computers can churn through repetitive tasks, without stopping for coffee.
 
-
       </script>
     </section>
+
 <!-- -------------------- -->
 <!-- Begin final exercises -->
 <!-- -------------------- -->
+
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Final Exercise!
