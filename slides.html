@@ -40,7 +40,6 @@
         <p>Network: <br>
         Password: </p>  -->
 
-
         <h2>Download</h2>
         <p>Learner files: <a href="https://github.com/ladieslearningcode/llc-intro-to-python/archive/master.zip">http://bitly.com/llc-python</a>
             (zip file)</p>
@@ -197,8 +196,8 @@
 
         1. **Python 2.7.x installed** ( [Mac](https://www.python.org/downloads/),
         [Windows](https://www.python.org/downloads/windows/) )
-        1. **[PyCharm Educational Edition](https://www.jetbrains.com/pycharm-educational/)**
-        1. [Learner files from LLC (containing the exercise and reference
+        2. **[PyCharm Educational Edition](https://www.jetbrains.com/pycharm-educational/)**
+        3. [Learner files from LLC (containing the exercise and reference
         files)](https://github.com/ladieslearningcode/llc-intro-to-python/archive/master.zip).
         * make sure the **llc-intro-to-python-master.zip** file has been unzipped (and extracted for PC users) so you
         can access the contents of the folder
@@ -384,8 +383,8 @@
             ```python
             >>> print(2 + "2")
             Traceback (most recent call last):
-            File "<input>", line 1, in <module>
-                TypeError: unsupported operand type(s) for +: 'int' and 'str'
+              File "<input>", line 1, in <module>
+            TypeError: unsupported operand type(s) for +: 'int' and 'str'
             ```
 
         </script>
@@ -403,8 +402,8 @@
             ```python
             >>> print(2 + "2")
             Traceback (most recent call last):
-            File "<input>", line 1, in <module>
-                TypeError: unsupported operand type(s) for +: 'int' and 'str'
+              File "<input>", line 1, in <module>
+            TypeError: unsupported operand type(s) for +: 'int' and 'str'
             ```
 
             <br>
@@ -451,13 +450,15 @@
         <script type="text/template">
             ## Typecasting (Continued)
 
-            Python can also be used to convert numbers to strings. This example below will return an error.  Why?
+            Python can also be used to convert numbers to strings.
+            This example below will return an error.  
+            Why?
 
             ```python
             >>> print(99 + " bottles of beer on the wall")
             Traceback (most recent call last):
-            File "<input>", line 1, in <module>
-                TypeError: unsupported operand type(s) for +: 'int' and 'str'
+              File "<input>", line 1, in <module>
+            TypeError: unsupported operand type(s) for +: 'int' and 'str'
             ```
 
             <br>
@@ -515,13 +516,17 @@
             >>> x * y
             ```
 
-            What do you think the value of `x * y` will be? <span class="delayed">50</span>
+            What do you think the value of `x * y` will be?
+            <span class="delayed">50</span>
 
-            Why?<!-- .element: class="delayed" -->
+            <!-- .element: class="delayed" -->
+            Why?
 
-            You changed <!-- .element: class="delayed" -->`y`, but the old value of `x` is still in memory.
-            Python will remember variable names until you close PyCharm or [clear them manually](https://docs.python.org/2/tutorial/datastructures.html#the-del-statement).
-
+            <!-- .element: class="delayed" -->
+            You changed `y`, but the old value of `x` is still in memory. 
+            Python will remember variable namesuntil you close PyCharm or 
+            [clear them manually](https://docs.python.org/2/tutorial/datastructures.html#the-del-statement).
+            
         </script>
     </section>
 
@@ -549,11 +554,14 @@
         <script type="text/template">
             ## Pro Tip! Use Comments
 
-            Programmers use *comments* to leave notes for themselves (and other people reading their code in the future)
+            Programmers use *comments* to leave notes for themselves (and other 
+            people reading their code in the future)
 
             Good comments add information that isn&rsquo;t immediately obvious.
 
-            You can also use comments to organize your code or to "hide" chunks of code you don't want to delete but are not ready to use yet. Feel free to add your own throughout the exercises!
+            You can also use comments to organize your code or to "hide" chunks 
+            of code you don't want to delete but are not ready to use yet.
+            Feel free to add your own throughout the exercises!
 
             Note the syntax below:
 
@@ -573,24 +581,27 @@
         <script type="text/template">
             ## Class Exercise 1: Hello World
 
-            Instead of just a 'Hello World' message on the screen, take it one step further and have Python say hello to anyone!
+            Instead of just a 'Hello World' message on the screen, take it one
+            step further and have Python say hello to anyone!
 
-            The function `raw_input` in Python 2 (or `input` if you have installed Python 3) will get the data input by the user and *return* the value back to you.
+            The function `raw_input` in Python 2 (or `input` if you have installed Python 3)
+            will get the data input by the user and *return* the value back to you.
 
-            1. Give input function a message to let the user know what information is being requested using this syntax (note the quotes):
+            1. Give input function a message to let the user know what 
+               information is being requested using this syntax (note the quotes):
 
-            Python 2
-            ```python
-            >>> raw_input("What's your name?")
-            ```
+                Python 2
+                ```python
+                >>> raw_input("What's your name?")
+                ```
+    
+                Python 3
+                ```python
+                >>> input("What's your name?")
+                ```
 
-            Python 3
-            ```python
-            >>> input("What's your name?")
-            ```
-
-            1. The user types a response and hits the **enter** key
-            1. Whatever the user types is **returned** to you.
+            2. The user types a response and hits the **enter** key
+            3. Whatever the user types is **returned** to you.
 
             Try it in your console. It will look something like this:
 
@@ -604,17 +615,22 @@
         <script type="text/template">
             ## Class Exercise 1: Hello World (part 2)
 
-            Using the console is great for testing smaller chunks of code but there is a better way. Python can run code from a file with a `.py` file **extension**. Let&rsquo;s create a Python file!
+            Using the console is great for testing smaller chunks of code but
+            there is a better way. Python can run code from a file with a `.py`
+            file **extension**. Let&rsquo;s create a Python file!
 
-            1. Right-click (or two-finger tap) on the **exercises** folder to create a new file. Then select **New > Python File**
+            1. Right-click (or two-finger tap) on the **exercises** folder to
+               create a new file. Then select **New > Python File**
 
-            ![Create a new Python File](./framework/img/workshop/new-file-mac.png)
+                ![Create a new Python File](./framework/img/workshop/new-file-mac.png)
 
             2. Enter the name `ex1_hello_world.py` in the popup box.
 
-            ![new python file name](framework/img/workshop/new-python-file.png)
+                ![new python file name](framework/img/workshop/new-python-file.png)
 
-            3. Add the below program/code snippet to the file. Try to practice typing it out to get used to the syntax. Use this example as a reference rather than copy-paste.
+            3. Add the below program/code snippet to the file. 
+               Try to practice typing it out to get used to the syntax. 
+               Use this example as a reference rather than copy-paste.
 
             Reminder, anything after the `#` symbol is just a comment.
 
@@ -648,15 +664,17 @@
 
             Code in a **.py** file is just text until you **run** it through the Python program.
 
-            1. To run the code, select the green arrow symbol. It can also be found from the menu under **View > Tool Windows > Run**
+            1. To run the code, select the green arrow symbol. 
+               It can also be found from the menu under **View > Tool Windows > Run**
 
-               PyCharm automatically saves your file before you run it.
+               **Note**: PyCharm automatically saves your file before you run it.
 
-            ![](framework/img/workshop/pycharm-run.png)
+                ![](framework/img/workshop/pycharm-run.png)
 
-            2. The code will run in your console window. Type your name and press the **Enter** key to see your response repeated back at you.
+            2. The code will run in your console window. 
+               Type your name and press the **Enter** key to see your response repeated back at you.
 
-            ![Demo of hello_woTorld example](./framework/img/workshop/ex1-hello-world.png)
+                ![Demo of hello_woTorld example](./framework/img/workshop/ex1-hello-world.png)
 
             <br>
             You can run your program as many times as you like by repeating the steps above.
@@ -672,9 +690,12 @@
     <section class="slide" data-markdown>
         <script type="text/template">
             ## Conditionals &amp; Logic
-            The program we just wrote ran straight from top to bottom. What if the program could decide what to do instead?  `if` statements can be used to execute different sets of instructions based on specific conditions.
+            The program we just wrote ran straight from top to bottom. 
+            What if the program could decide what to do instead?  `if` statements 
+            can be used to execute different sets of instructions based on specific conditions.
 
-            Each `if` statement contains a test. The indented block is the code that will run if the test is `True` and looks something like this:
+            Each `if` statement contains a test. The indented block is the code
+            that will run if the test is `True` and looks something like this:
 
             ```python
             # Not real code
@@ -704,7 +725,8 @@
         <script type="text/template">
             ## Boolean values
 
-            How does `if` know what&rsquo;s `True` or `False`? Use 'Boolean' statements to test against the values.
+            How does `if` know what&rsquo;s `True` or `False`? Use 'Boolean'
+            statements to test against the values.
 
             Reminder, one equals symbol only *assigns* a value to the variable.
 
@@ -712,7 +734,8 @@
             >>> weather = "raining"
             ```
 
-            The double equals symbol (`==`) will evaluate if the value on the right matches the *assigned* value and can be used to test the values.
+            The double equals symbol (`==`) will evaluate if the value on the
+            right matches the *assigned* value and can be used to test the values.
 
             ```
             >>> weather == "cold"
@@ -735,9 +758,11 @@
 
             Create a new file named `ex2_weather_advice.py`.
 
-            Use the code snippet below as a reference but try to type it out rather than copy-paste to get used to the syntax.
+            Use the code snippet below as a reference but try to type it out 
+            rather than copy-paste to get used to the syntax.
 
-            Note the whitespace. Python uses indentation to signify which block of code belongs inside the `if` or `else`.
+            **Note the whitespace.** Python uses indentation to signify which 
+            block of code belongs inside the `if` or `else`.
 
             ```python
             # file: ex2_weather_advice.py
@@ -762,7 +787,8 @@
                 print("Dress normally :)")
             ```
 
-            **Bonus: ** Try running your file a few times to get different advice and/or update the conditions or add more conditions.
+            **Bonus: ** Try running your file a few times to get different advice 
+            and/or update the conditions or add more conditions.
 
         </script>
     </section>
@@ -841,7 +867,8 @@
         <script type="text/template">
             ## And / Or
 
-            Sometimes, you can&rsquo;t neatly capture your conditions with one expression. You may need to combine multiple expressions to determine what to do next.
+            Sometimes, you can&rsquo;t neatly capture your conditions with one expression. 
+            You may need to combine multiple expressions to determine what to do next.
 
             `and`: both things must be true
             `or`: either one, or both things must be true
@@ -898,7 +925,8 @@
         <script type="text/template">
             ## Exercise 3: Smarter Weather (15mins)
 
-            Instead of telling your program if it's cold, you can input the temperature and let it decide what to do.
+            Instead of telling your program if it's cold, you can input the
+            temperature and let it decide what to do.
 
             * open the existing `ex3_smarter_weather.py` file
             * use math comparison operators, `and`/`or` to complete the exercise
@@ -911,7 +939,7 @@
                 print("Go to the beach!")
 
             # the weather is less than 25 degrees AND greater than 15 degrees
-                elif [replace this with the right conditions]:
+            elif [replace this with the right conditions]:
                 # Print "Still warm enough for ice cream!"
             else:
                 # Print "Wear a sweater and dream of beaches."
@@ -942,7 +970,8 @@
         <script type="text/template">
             ## Lists
 
-            When we have collections of similar things, we might store them in a **list**
+            When we have collections of similar things, we might store them in a 
+            [list](https://www.programiz.com/python-programming/list)
 
             ```python
             weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
@@ -997,12 +1026,11 @@
 
             ```python
             Traceback (most recent call last):
-            File "<input>", line 1, in
-            <module>
-                IndexError: list index out of range
+              File "<input>", line 1, in <module>
+            IndexError: list index out of range
             ```
 
-                Python cannot find `weather_conditions[10]` because it does not exist.
+            Python cannot find `weather_conditions[10]` because it does not exist.
 
         </script>
     </section>
@@ -1022,8 +1050,8 @@
             ```python
             my_list = ['some','items']
             for member in my_list:
-            # do something
-            # python will do all of this indented code for each item
+                # do something
+                # python will do all of this indented code for each item
             ```
 
             Print all of the items in the list:
@@ -1031,15 +1059,16 @@
             ```python
             weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
             for condition in weather_conditions:
-            print(condition)
+                print(condition)
             ```
 
             Perform some math on each item in the list:
+
             ```python
             numbers = [5,11,66,22.5]
             for number in numbers:
-            result = number * 2
-            print(str(number) +' x 2 = ' + str(result))
+                result = number * 2
+                print(str(number) +' x 2 = ' + str(result))
             ```
 
         </script>
@@ -1054,14 +1083,14 @@
             We can add `1` to the current value of a variable, and assign it back to the same variable. Python processes everything to the right of the `=` before assigning the result.
 
             Count the number of items on your to-do list:
+
             ```python
             number_of_todos = 0
             to_do_list = ['Water plants', 'Clean bathroom','Sweep floors','Buy Coffee','Organise books','Write a novel']
 
-            for todos in to_do_list:
-            number_of_todos = number_of_todos + 1
-
-            print(number_of_todos)
+            for todo in to_do_list:
+                number_of_todos = number_of_todos + 1
+                print(number_of_todos)
             ```
 
         </script>
@@ -1092,9 +1121,10 @@
         <h1 class="heading-bg"><span>And now for something completely different</span></h1>
 
         <aside>Source: <a
-                href="https://www.flickr.com/photos/nerdcoreblog/13995269592/">flickr.com/photos/nerdcoreblog</a>
+            href="https://www.flickr.com/photos/nerdcoreblog/13995269592/">flickr.com/photos/nerdcoreblog</a>
         </aside>
     </section>
+
 
     <!-- -------------------- -->
     <!-- Opening a file -->
@@ -1115,7 +1145,7 @@
 
             ```python
             with open('llc-chapters.csv') as chapters:
-            print(chapters.read())
+                print(chapters.read())
             ```
 
             ![read csv](framework/img/workshop/read-csv-file.png) <!-- .element: width="45%" -->
@@ -1135,9 +1165,9 @@
 
             ```python
             with open('llc-chapters.csv') as chapters:
-            print(chapters.readline())
-            print(chapters.readline())
-            print(chapters.readline())
+                print(chapters.readline())  # The header row
+                print(chapters.readline())  # Row 1
+                print(chapters.readline())  # Row 2
             ```
 
         </script>
@@ -1152,30 +1182,15 @@
             Notice that all three lines have exactly three values, separated by a comma.
 
             ```
-            City,Province,Chapter Lead(s)
-            Vancouver,BC,Meghan
-            Calgary,AB,Darcie
+            City,Province,Chapter Lead(s)  # The header row
+            Vancouver,BC,Meghan  # Row 1
+            Calgary,AB,Darcie  # Row 2
             ```
 
             * the first line shows the headings that describe the data in the next lines
             * the second and third line each represent one of the LLC chapter cities & the name of the chapter lead
 
-            That's because
-            ## Loops: Reading all the lines in a file
-
-            We've just seen how to print out one line of a time but what if you need to read all the lines in the file?
-
-            Try using the `for` loop to print each row in the file.
-
-            Here's some sample code:
-
-            ```python
-            with open('llc-chapters.csv') as chapters:
-            for line in chapters:
-            print(line)
-            ```
-
-            it's pulling the data from the rows & columns of the CSV file.
+            That's because it's pulling the data from the rows & columns of the CSV file.
 
         </script>
     </section>
@@ -1193,8 +1208,8 @@
 
             ```python
             with open('llc-chapters.csv') as chapters:
-            for line in chapters:
-            print(line)
+                for line in chapters:
+                    print(line)
             ```
 
         </script>
@@ -1248,8 +1263,8 @@
             Today we&rsquo;ll mostly use the `DictReader` tool to access the values.
 
             1. import the `csv` library
-            1. open the file
-            1. pass the file into `DictReader`
+            2. open the file
+            3. pass the file into `DictReader`
 
             ```
             import csv
@@ -1257,12 +1272,12 @@
             # Open 'llc-chapters.csv' file
             with open('llc-chapters.csv') as chapters_file:
 
-            # Convert it to a csv_data structure
-            chapters_data = csv.DictReader(chapters_file)
+                # Convert it to a csv_data structure
+                chapters_data = csv.DictReader(chapters_file)
 
-            # Now, we can pull out one row at a time.
-            chapter = next(chapters_data)
-            print(chapter)
+                # Now we can read each row
+                chapter = next(chapters_data)
+                print(chapter)
             ```
 
             What is this?
@@ -1278,7 +1293,7 @@
         <script type="text/template">
             ## Dictionaries
 
-            Python used `DictReader` to read a row in the file and transform it into a **dictionary**, a bunch of *key: value pairs*.
+            Python used `DictReader` (DictionaryReader) to read a row in the file and transform it into a **dictionary**, a bunch of *key: value pairs*.
 
             This is just like a regular dictionary:
             > **[python](http://www.dictionary.com/browse/python)** : any of several Old World boa constrictors of the subfamily Pythoninae, often growing to a length of more than 20 feet
@@ -1323,13 +1338,13 @@
             # Open 'llc-chapters.csv' file
             with open('llc-chapters.csv') as chapters_file:
 
-            # Convert it to a csv_data structure
-            chapters = csv.DictReader(chapters_file)
+                # Convert it to a csv_data structure
+                chapters = csv.DictReader(chapters_file)
 
-            # loop through each row of the "chapters" Dictonary
-            for chapter in chapters:
-            print(chapter['City'] + ', ' + chapter['Province'])
-            print(chapter['Chapter Lead(s)'])
+                # Loop through each row of the "chapters" Dictonary
+                for chapter in chapters:
+                    print(chapter['City'] + ', ' + chapter['Province'])
+                    print(chapter['Chapter Lead(s)'])
             ```
 
         </script>
@@ -1350,13 +1365,13 @@
 
             # Open the 'llc-chapters.csv' file
 
-            # Convert it to a csv_data structure
+                # Convert it to a csv_data structure
 
-            # Loop through each of the rows
+                # Loop through each of the rows
 
-            # Compare the 'City' in the row with your city
+                    # Compare the 'City' in the row with your city
 
-                # Print a thank you message to your chapter lead(s)
+                    # Print a thank you message to your chapter lead(s)
             ```
 
         </script>
@@ -1374,11 +1389,11 @@
             import csv
 
             with open('llc-chapters.csv') as csv_file:
-            csv_data = csv.DictReader(csv_file)
+                csv_data = csv.DictReader(csv_file)
 
-            count = 0
-            for row in csv_data:
-            count = count + 1
+                count = 0
+                for row in csv_data:
+                    count = count + 1
 
             print("There are " + str(count) + " chapters")
             ```
@@ -1408,6 +1423,7 @@
             ```
 
             The `.find()` function is case-sensitive – it will only match the *exact* string you pass to  it.
+        
             *<!-- .element: class="footnote" --> When we said computers require **exact** instructions, we meant it!*
 
         </script>
@@ -1427,7 +1443,7 @@
             ```python
             leads = "Erika & Cassie"
             if leads.find("&") >= 0:
-            print(leads + " are co-leads")
+                print(leads + " are co-leads")
             ```
 
             Create a new file in the **exercises** folder called `ex6_coleaders.py`, and use what you've learned so far to find which chapter cities have co-leads.
@@ -1438,11 +1454,13 @@
         </script>
     </section>
 
+
     <section class="slide title" data-markdown>
         <script type="text/template">
             # So what? I can count all this stuff myself!
         </script>
     </section>
+
 
     <section class="slide" data-markdown>
         <script type="text/template">
@@ -1458,6 +1476,7 @@
 
         </script>
     </section>
+
 
     <!-- -------------------- -->
     <!-- Begin final exercises -->
@@ -1475,6 +1494,7 @@
 
         </script>
     </section>
+
 
     <section class="slide" data-markdown>
         <script type="text/template">
@@ -1543,12 +1563,15 @@
         </script>
     </section>
 
+
     <section class="slide centered" data-markdown>
         <script type="text/template">
             </br></br> </br>
             ![Good luck](framework/img/workshop/good-luck.gif) <!-- .element: style="width: 50%" -->
+
         </script>
     </section>
+
 
     <!-- Last slide -->
 
@@ -1574,6 +1597,7 @@
 
 </main><!-- cls main section -->
 
+
 <footer>
     <p class="license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img
             alt="Creative Commons License" src="framework/img/cc-by-nc.svg"/></a> by <a
@@ -1582,6 +1606,7 @@
     <p class="instructions">Use the left <i class="fa fa-arrow-left"></i> and right <i class="fa fa-arrow-right"></i>
         arrow keys to navigate</p>
 </footer>
+
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="framework/scripts/slideshow.js"></script>
